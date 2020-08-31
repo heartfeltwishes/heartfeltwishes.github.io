@@ -58,8 +58,16 @@
         transform: rotate(-2deg) scale(1.05);
       }
       .polaroid img {
+        filter: grayscale(100%);
         margin-top: 7%;
         width: 85%;
+        transition: all 500ms ease-in-out;
+      }
+      .polaroid:hover img{
+        filter: grayscale(0%);
+      }
+      .polaroid.black-n-white:hover img {
+        filter: sepia(50%);
       }
       .polaroid .place {
         color: #333;
