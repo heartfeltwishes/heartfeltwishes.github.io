@@ -63,7 +63,7 @@
         width: 85%;
         transition: all 500ms ease-in-out;
       }
-      .polaroid:hover img{
+      .polaroid:hover img {
         filter: grayscale(0%);
       }
       .polaroid.black-n-white:hover img {
@@ -115,6 +115,12 @@
       @media screen and (max-width: 400px) {
         .grid {
           gap: 1.5rem;
+        }
+        .polaroid:nth-child(2n):hover {
+          transform: rotate(0deg) scale(1);
+        }
+        .polaroid:nth-child(2n + 1):hover {
+          transform: rotate(0deg) scale(1);
         }
       }
     </style>
