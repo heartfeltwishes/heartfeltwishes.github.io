@@ -1,13 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
     <title>Laaa</title>
-</head>
-<body>
-    <pre>
-        // happiness placeholder
-    </pre>
-</body>
+    <style>
+      body {
+        font-family: "Special Elite", cursive;
+        background-color: #efefef;
+      }
+      .container {
+        width: 1280px;
+        margin: 0px auto;
+      }
+      .grid {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .polaroid {
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.1);
+        transition: all 500ms ease-in-out;
+      }
+      .polaroid:hover {
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+      .polaroid:nth-child(2n):hover {
+        transform: rotate(2deg) scale(1.05);
+      }
+      .polaroid:nth-child(2n + 1):hover {
+        transform: rotate(-2deg) scale(1.05);
+      }
+      .polaroid img {
+        margin-top: 7%;
+        width: 85%;
+      }
+      .polaroid .place {
+        color: #333;
+        font-size: 1.2em;
+        margin: 10px 0 0 0;
+      }
+      .polaroid .day {
+        color: #555;
+        margin: 4px 0 10px 0;
+        font-size: 0.8em;
+      }
+      header {
+        text-align: center;
+        padding: 30px 0px;
+      }
+      header h1 {
+        font-size: 3em;
+        color: #333;
+      }
+      header p {
+        font-size: 1.5em;
+        color: #555;
+      }
+      footer {
+        margin: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer img {
+        margin-left: 10px;
+        font-size: 1.5em;
+        height: 1em;
+      }
+      @media screen and (max-width: 1280px) {
+        .container {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 830px) {
+        .grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .grid {
+          gap: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="item">
+          <header>
+            <h1>Laaa</h1>
+            <p>You are beautiful by default.</p>
+          </header>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="item polaroid">
+          <img src="./assets/img/polaroids/1.jpg" />
+          <p class="place">Beach</p>
+          <p class="day">12 - 1 - 2018</p>
+        </div>
+        <div class="item polaroid">
+            <img src="./assets/img/polaroids/2.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/3.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/4.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/5.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/6.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/7.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/8.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/9.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/10.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/11.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+          <div class="item polaroid">
+            <img src="./assets/img/polaroids/12.jpg" />
+            <p class="place">Beach</p>
+            <p class="day">12 - 1 - 2018</p>
+          </div>
+      </div>
+      <footer>
+        <img src="./assets/icons/code-icon.png" title="Made">
+        <img src="./assets/icons/heart-icon.png" title="with love" />
+        <img src="./assets/icons/mocha-icon.png" title="Chaa" />
+      </footer>
+    </div>
+  </body>
 </html>
