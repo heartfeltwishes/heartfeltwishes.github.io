@@ -7,6 +7,12 @@
       href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
       rel="stylesheet"
     />
+    <!-- favicons and app icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>Laaa</title>
     <style>
       body {
@@ -23,6 +29,17 @@
           #eef2f3,
           #8e9eab
         ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      @keyframes sparkle {
+        0% {
+          color: #555;
+        }
+        50% {
+          color: #ffd700;
+        }
+        100% {
+          color: #555;
+        }
       }
       .container {
         width: 1280px;
@@ -91,6 +108,9 @@
         font-size: 1.2em;
         color: #555;
       }
+      header p .sparkle {
+        animation: sparkle 3s infinite alternate;
+      }
       footer {
         margin: 40px 0;
         display: flex;
@@ -132,7 +152,7 @@
         <div class="item">
           <header>
             <h1>Laaa</h1>
-            <p>Few pixels, glorious stories.</p>
+            <p>Few pixels, <span class="sparkle">glorious</span> stories.</p>
           </header>
         </div>
       </div>
